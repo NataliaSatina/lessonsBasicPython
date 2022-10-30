@@ -14,3 +14,5 @@ myList.append(expenses)
 for i in range(11):
     myList.append(myList[i]*1.03)
 print("Необходимо взять в долг " + str(round(sum(myList)-salary*12,2)) + " рублей")
+
+# Отлично!
