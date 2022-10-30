@@ -21,3 +21,11 @@ for i in range(3):
     myList.append(tuple(my_favorite_songs.items())[random.randint(0,8)])
 print(myList)
 print("Три песни звучат " + str(round(sum(n[1] for n in myList),2)) + " минут.")
+
+# Как и в задании 4
+time = 0
+for song in sample(tuple(my_favorite_songs), 3):
+    print(song)
+    time += my_favorite_songs[song]
+
+print(f'Три песни звучат {round(time, 2)}')
