@@ -22,3 +22,12 @@ for i in range(3):
 # *100 и /100 для того, чтобы не использовать округление, а перевести в int и не терять точность
     mylist.append(int(my_favorite_songs[random.randint(0,8)][1]*100))
 print("Три песни звучат " + str(sum(mylist)/100) + " минут")
+
+# Отлично! Можно и так
+# Решение 2
+time = 0
+for song in sample(my_favorite_songs, 3):
+    print(song[0])
+    time += song[1]
+
+print(f'Три песни звучат {round(time, 2)}')
